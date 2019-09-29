@@ -1,0 +1,39 @@
+/*header {
+	background: #1c66de!important;
+}*/
+.dashboard h1{font-size: 20px; margin-bottom:20px;}
+.bg-primary{background-color:#2a8cd5!important;}
+.dashboard .bg-warning, #content .bg-warning {
+    background-color: #1d5d95!important;
+}
+.dashboard .bg-success, #content .bg-success {
+    background-color: #0e2e49!important;
+}
+.dashboard .bg-danger, #content .bg-danger {
+    background-color: #113656 !important;
+}
+.adminmenu{display: none;}
+.dashboard .card-body-icon i, #content .card-body-icon i{font-size: 40px;}
+
+
+@media screen and (max-width:980px){
+    #navbar-menu{    position: absolute!important;  top:70px; left: -150px; transition: ease-in all 0.5s; z-index: 9999;  background: #00152d;}
+    #navbar-menu ul li a span{display:block!important;}
+    .navbar-collapse.showmenun{left:0!important ; transition: ease-in all 0.5s; }
+    #navbar-menu ul li{float: none!important;}
+    #navbar-menu ul{flex-direction: column!important;}
+    .adminmenu{ cursor:pointer; display: block; color:#fff!important; font-size:20px;} 
+    
+   
+}
+@media screen and (max-width:767px){
+    .navbar-expand{flex-flow:row wrap!important;}
+    #content{margin-top:25px!important; }
+    .navbar-nav{display: block!important;}
+    .navbar-nav li{float: left;}
+    #navbar .nav-item .nav-link{padding: 14px 20px!important;}
+    header{margin-bottom: 0px!important;}
+    
+
+
+}

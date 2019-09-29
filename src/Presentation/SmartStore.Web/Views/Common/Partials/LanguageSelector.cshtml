@@ -1,0 +1,37 @@
+﻿@model LanguageSelectorModel
+@using SmartStore.Web.Models.Common;
+@using SmartStore.Core;
+@using SmartStore.Core.Infrastructure;
+@if (Model.AvailableLanguages.Count > 1)
+{
+	var webHelper = EngineContext.Current.Resolve<IWebHelper>();
+	var activeLang = Model.AvailableLanguages.Where(x => x.Id == Model.CurrentLanguageId).FirstOrDefault();
+
+	<!-- Language -->
+	<div class="dropdown language-selector">
+		<a class="btn pr-0 dropdown-toggle" href="#" role="button" id="langdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<img src="~/Content/theme/img/core-img/eng.png" alt=""> @activeLang.SeoCode.ToUpper()</a>
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="langdropdown">
+			@foreach (var lang in Model.AvailableLanguages)
+			{
+				var href = webHelper.ModifyQueryString(Url.RouteUrl("ChangeLanguage", new { langid = lang.Id }), "returnurl=" + Url.Encode(Model.ReturnUrls[lang.SeoCode]), null);
+
+				<a class="dropdown-item" title="@lang.NativeName" href="@href"
+				   data-selected="@(lang.Equals(activeLang) ? "true" : "false")" data-abbreviation="@lang.Name">
+					<span class="mr-1 align-text-bottom">
+						<img src="@Url.Content("~/Content/images/flags/" + lang.FlagImageFileName)" />
+					</span>
+					@lang.Name
+				</a>
+			}
+			</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			$(".language-selector .dropdown-item.disabled").on('click', function (e) {
+				e.preventDefault();
+			});
+		});
+	</script>
+}

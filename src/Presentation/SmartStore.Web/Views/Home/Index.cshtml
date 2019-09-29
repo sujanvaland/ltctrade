@@ -1,0 +1,340 @@
+﻿﻿@model HomeModel
+@using SmartStore.Web.Models.Home
+@{
+	Layout = "_Layout";
+	var Package = Model.plans.FirstOrDefault();
+}
+
+
+<div class="hero-wrap js-fullheight">
+	<div class="overlay"></div>
+	<div class="container-fluid px-0">
+		<div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-end">
+			<img class="one-third js-fullheight align-self-end order-md-last img-fluid" src="~/Content/theme/images/undraw_pair_programming_njlp.svg" alt="">
+			<div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
+				<div class="text mt-5">
+					<span class="subheading">Welcome to myTrafficHub</span>
+					<h1 class="mb-3"><span>Get</span> <span>1000 Free advertisement credit's</span> <span>on Sign Up</span></h1>
+					<p>Join today and start making profit at the same time.</p>
+					<p><a href="#" class="btn btn-primary px-4 py-3">Sign Up Now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="ftco-section services-section bg-light">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+				<h2 class="mb-4">Why Choose Us</h2>
+				<p>We have a unique pay plan with super fast working team working round the clock for your success.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center order-md-last">
+						<span class="flaticon-cloud"></span>
+					</div>
+					<div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
+						<h3 class="heading">Super Fast Withdrawals</h3>
+						<p class="mb-0">All withdrawals are automated, you will receive your withdrawal as soon as you cycle.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-server"></span>
+					</div>
+					<div class="media-body pl-4">
+						<h3 class="heading">Free Advertisment</h3>
+						<p class="mb-0">You receive unlimited banner/login/text ads free once you activate your account.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center order-md-last">
+						<span class="flaticon-customer-service"></span>
+					</div>
+					<div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
+						<h3 class="heading">Technical Services</h3>
+						<p>We have a strong technical team with awesome programmers working behind the scene to provide you a robust experience</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-life-insurance"></span>
+					</div>
+					<div class="media-body pl-4">
+						<h3 class="heading">Secure and Reliable</h3>
+						<p>Our system is fully secure and hack proof, we welcome hackers to try their luck :) </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center order-md-last">
+						<span class="flaticon-cloud-computing"></span>
+					</div>
+					<div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
+						<h3 class="heading">Fast Server</h3>
+						<p>Our system is hosted on cloud, so its always up and can handle any number of traffic.</p>
+					</div>s
+				</div>
+			</div>
+			<div class="col-md-6 d-flex align-self-stretch ftco-animate">
+				<div class="media block-6 services d-flex align-items-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-settings"></span>
+					</div>
+					<div class="media-body pl-4">
+						<h3 class="heading">24/7 Support</h3>
+						<p>Drop us an email or message on our online chat, our team are waiting to help you out with any queries</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-section ftco-counter img" id="section-counter">
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+				<span class="subheading">Our site statistic</span>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<div class="row">
+					<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18 text-center">
+							<div class="text">
+								<strong class="number" data-number="@Model.OnlineVistors">@Model.OnlineVistors</strong>
+								<span>Todays Visitors</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18 text-center">
+							<div class="text">
+								<strong class="number" data-number="@Model.TotalCustomer">@Model.TotalCustomer</strong>
+								<span>Registered Members</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18 text-center">
+							<div class="text">
+								<strong style="color:#fff;">$</strong><strong class="number" data-number="@Model.TotalSiteDeposit">@Model.TotalSiteDeposit</strong>
+								<span>Total Purchase</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18 text-center">
+							<div class="text">
+								<strong style="color:#fff;">$</strong> <strong class="number" data-number="@Model.TotalSiteWithdrawal">@Model.TotalSiteWithdrawal</strong>
+								<span>Total Withdrawals</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-section ftco-no-pt ftc-no-pb">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 py-5">
+				<img src="~/Content/theme/images/undraw_podcast_q6p7.svg" class="img-fluid" alt="">
+				<div class="heading-section ftco-animate mt-5">
+					<h2 class="mb-4">Our Main Services</h2>
+					<p>
+						Looking for cheap but quality advertising? We have a ton of users, and great ad options, We offer Login Ads, Banner Ads and Directory Listing services at affordable rates.
+						Get your ads setup quickly, and start receiving ad views and/or banner impressions
+						absolutely free!.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 py-5">
+				<div class="row">
+					<div class="col-md-6 ftco-animate">
+						<div class="media block-6 services border text-center">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-cloud-computing"></span>
+							</div>
+							<div class="mt-3 media-body media-body-2">
+								<h3 class="heading">Login Ads</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<div class="media block-6 services border text-center">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-cloud"></span>
+							</div>
+							<div class="mt-3 media-body media-body-2">
+								<h3 class="heading">Banner Ads</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<div class="media block-6 services border text-center">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-server"></span>
+							</div>
+							<div class="mt-3 media-body media-body-2">
+								<h3 class="heading">Directory Listing</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<div class="media block-6 services border text-center">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-database"></span>
+							</div>
+							<div class="mt-3 media-body media-body-2">
+								<h3 class="heading">Personal Emails</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-section bg-light">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-12 text-center heading-section ftco-animate p-1" style="margin-top:20px;">
+				<h3 class="mb-4">Our Pay Plan</h3>
+			</div>
+		</div>
+		<h3>Fast Matrix Plan</h3>
+		<div class="row d-flex">
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 1</h3><br />
+						<h3>2x1 Cost $1</h3><br />
+						<h3>Pays $2</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 2</h3><br />
+						<h3>2x1 Cost $2</h3><br />
+						<h3>Pays $4</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 3</h3><br />
+						<h3>2x1 Cost $4</h3><br />
+						<h3>Pays $8</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 4</h3><br />
+						<h3>2x1 Cost $8</h3><br />
+						<h3>Pays $16</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 5</h3><br />
+						<h3>2x1 Cost $16</h3><br />
+						<h3>Pays $32</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 6</h3><br />
+						<h3>2x1 Cost $32</h3><br />
+						<h3>Pays $64</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 7</h3><br />
+						<h3>2x1 Cost $64</h3><br />
+						<h3>Pays $128</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 8</h3><br />
+						<h3>2x1 Cost $128</h3><br />
+						<h3>Pays $256</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 9</h3><br />
+						<h3>2x1 Cost $256</h3><br />
+						<h3>Pays $512</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 ftco-animate">
+				<div class="media block-6 services border text-center">
+					<div class="mt-3 media-body media-body-2">
+						<h3>Board 10</h3><br />
+						<h3>2x1 Cost $512</h3><br />
+						<h3>Pays $1024</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3>Passive Income</h3>
+		<div class="row d-flex">
+			<div class="col-md-12">
+				<table class="table">
+					<tr><th>Ad Pack</th><th>Cost</th><th>Cap</th><th>Daily ROI</th><th>Min Requirement</th><th>Ads to Surf</th><th>Ad Credit</th></tr>
+					<tr><td>Ad Pack 1</td><td>$1</td><td>$1.1 (110%)</td><td>1% to 3%</td><td>Position in Board 1</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 2</td><td>$2</td><td>$2.24 (112%)</td><td>1% to 3%</td><td>10 Ad Pack 1 &amp; Position in Board 2</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 3</td><td>$5</td><td>$5.75 (115%)</td><td>1% to 3%</td><td>10 Ad Pack 2 &amp; Position in Board 3</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 4</td><td>$10</td><td>$11.8 (118%)</td><td>1% to 3%</td><td>10 Ad Pack 3 &amp; Position in Board 4</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 5</td><td>$15</td><td>$18 (120%)</td><td>1% to 3%</td><td>10 Ad Pack 4 &amp; Position in Board 5</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 6</td><td>$30</td><td>$36 (120%)</td><td>1% to 3%</td><td>10 Ad Pack 5 &amp; Position in Board 6</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 7</td><td>$50</td><td>$60 (120%)</td><td>1% to 3%</td><td>10 Ad Pack 6 &amp; Position in Board 7</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 8</td><td>$100</td><td>$120 (120%)</td><td>1% to 3%</td><td>10 Ad Pack 7 &amp; Position in Board 8</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 9</td><td>$200</td><td>$240 (120%)</td><td>1% to 3%</td><td>10 Ad Pack 8 &amp; Position in Board 9</td><td>10 Ads</td><td>100</td></tr>
+					<tr><td>Ad Pack 10</td><td>$400</td><td>$500 (125%)</td><td>1% to 3%</td><td>10 Ad Pack 9 &amp; Position in Board 10</td><td>10 Ads</td><td>100</td></tr>
+				</table>
+			</div>
+			<h3>Infinity level commission </h3>
+			<div class="col-md-12" style="text-align:center;">
+				<span class="btn btn-primary px-4 py-3">
+					We pay a standard 10% commission on all sales from your referrals,
+					starting with your second referral. <br />What this means is that everyone's first referral, the commission of the sale will go to the upline or sponsor.
+					<br />This Infinity Plan is also called the X-Up or 1-Up compensation plan.
+				</span>
+				<img src="~/Content/Images/PassupBonus.png" class="img-fluid" />
+			</div>
+		</div>
+	</div>
+</section>

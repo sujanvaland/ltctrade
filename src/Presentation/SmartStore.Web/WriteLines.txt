@@ -1,0 +1,2 @@
+Unilevel Bonus :System.NullReferenceException: Object reference not set to an instance of an object.
+   at SmartStore.Web.Controllers.IPNHandlerController.ReleaseLevelCommission(Int32 planid, Int32 customerid, Single amountInvested)

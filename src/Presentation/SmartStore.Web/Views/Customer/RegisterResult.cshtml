@@ -1,0 +1,49 @@
+﻿@model RegisterResultModel
+@using SmartStore.Web.Models.Customer;
+@{
+	Layout = "_Layout";
+
+	Html.AddTitleParts(T("PageTitle.Register").Text);
+
+	//continue URL
+	var continueUrl = "";
+	if (!String.IsNullOrEmpty(this.Context.Request.QueryString["returnUrl"]))
+	{
+		continueUrl = this.Context.Request.QueryString["returnUrl"];
+	}
+	else
+	{
+		continueUrl = Url.RouteUrl("HomePage");
+	}
+}
+
+<div class="hero-wrap hero-wrap-2" style="background-image: url('/Content/theme/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-end justify-content-start">
+			<div class="col-md-8 ftco-animate text-center text-md-left mb-5">
+				<p class="breadcrumbs mb-0"><span class="mr-3"><a href="@Url.Action("Index","Home")">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Login</span></p>
+				<h1 class="mb-3 bread">Registration Successful</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page registration-result-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-body">
+					<p class="section-body">
+						@Model.Result
+					</p>
+					<div class="buttons">
+						<a class="btn btn-secondary register-continue-button" href="~/admin">
+							@T("Account.Register.Result.Continue")
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

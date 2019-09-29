@@ -1,0 +1,209 @@
+﻿@model SmartStore.Admin.Models.Hyip.HomeModel
+@{
+	ViewBag.Title = T("Admin.Dashboard").Text;
+}
+<div class="section-header">
+	<div class="title">
+		<i class="fa fa-bar-chart-o"></i>
+		@T("Admin.Dashboard.StoreStatistics")
+	</div>
+	<div class="options">
+		<a href="@Url.Action("SurfAds", "AdCampaign")" class="btn btn-primary" style="width:200px;">Surf Ads</a>
+	</div>
+</div>
+<div class="dashboard">
+	@{ Html.RenderWidget("admin_dashboard_top"); }
+	<h1>Referral Link : <a href="@Model.ReferralLink" target="_blank">@Model.ReferralLink</a></h1>
+	<div class="row">
+		<div class="col-xl-3 col-sm-6 mb-3">
+			<div class="card text-white bg-primary o-hidden h-100">
+				<div class="card-body">
+					<div class="card-body-icon">
+						<i class="fa fa-fw fa-money"></i>
+					</div>
+					<div class="mr-5" style="font-size:1.5em;">
+						@ViewBag.CurrencyCode @Model.AvailableBalance
+						<br />@T("MyInvestment.AvailableBalance")
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-sm-6 mb-3">
+			<div class="card text-white bg-success o-hidden h-100">
+				<div class="card-body">
+					<div class="card-body-icon">
+						<i class="fa fa-fw fa-gift"></i>
+					</div>
+					<div class="mr-5" style="font-size:1.5em;">
+						@ViewBag.CurrencyCode @Model.TotalEarning
+						<br />@T("MyInvestment.TotalEarning")
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-sm-6 mb-3">
+			<div class="card text-white bg-primary o-hidden h-100">
+				<div class="card-body">
+					<div class="card-body-icon">
+						<i class="fa fa-fw fa-money"></i>
+					</div>
+					<div class="mr-5" style="font-size:1.5em;">
+						@ViewBag.CurrencyCode @Model.CompletedWithdrawal
+						<br />@T("MyInvestment.CompletedWithdrawal")
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-sm-6 mb-3">
+			<div class="card text-white bg-warning o-hidden h-100">
+				<div class="card-body">
+					<div class="card-body-icon">
+						<i class="fa fa-fw fa-money"></i>
+					</div>
+					<div class="mr-5" style="font-size:1.5em;">
+						@ViewBag.CurrencyCode @Model.PendingWithdrawal
+						<br />@T("MyInvestment.PendingWithdrawal")
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+		<div class="col-lg-2">
+			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th colspan="2">Account Information - Server Time : @DateTime.Now </th>
+					</tr>
+				</thead>
+				<tr>
+					<td style="font-weight:bold;">Investor Id</td>
+					<td>@Model.InvestorId</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Name</td>
+					<td>@Model.Name</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Registration Date</td>
+					<td>@Model.RegistrationDate</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Referred By</td>
+					<td>@Model.ReferredBy</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Status</td>
+					<td style="font-weight:bold;@((Model.Status == "Active") ? "color:green;" : "color:red;")">@Model.Status</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">My Referral</td>
+					<td>@Model.TotalReferral</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Vacation Mode Expiry</td>
+					<td>@Model.VacationModelExpiryDate</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">Ads required to Surf</td>
+					<td>
+						@Model.NoOfAdsToSurf
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-lg-2">
+		<table>
+			<tr>
+				<td>
+					<a href="@Url.Action("PurchaseVaccationMode","AdCampaign")" class="btn btn-primary" style="width:200px;">Buy Vaccation Mode</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="@Url.Action("Withdrawal","Investment")" class="btn btn-primary" style="width:200px;">Request Withdrawal</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="@Url.Action("WithdrawalReport","Report")" class="btn btn-primary" style="width:200px;">Withdrawal History</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="@Url.Action("MyReferral","Customer")" class="btn btn-primary" style="width:200px;">Referral</a>
+				</td>
+			</tr>
+		</table>
+		@*@{ Html.RenderAction("MarketplaceFeed"); }*@
+	</div>
+	<div class="col-md-5">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th colspan="2">My Earnings:</th>
+				</tr>
+			</thead>
+			<tr>
+				<td style="font-weight:bold;">Pass Up Bonus</td>
+				<td>$@Model.DirectBonus</td>
+			</tr>
+			<tr>
+				<td style="font-weight:bold;">Profit Share</td>
+				<td>$@Model.PoolShare</td>
+			</tr>
+			<tr>
+				<td style="font-weight:bold;">Matrix Earning</td>
+				<td>$@Model.CyclerIncome</td>
+			</tr>
+			<tr>
+				<td style="font-weight:bold;">Total Earning</td>
+				<td>$@Model.TotalIncome</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+	<div class="col-lg-2">
+		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
+	</div>
+</div>
+
+@{ Html.RenderWidget("admin_dashboard_bottom"); }
+</div>

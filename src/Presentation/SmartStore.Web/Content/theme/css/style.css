@@ -10045,3 +10045,7 @@ textarea.form-control {
 .alert-success {
 	padding-left: 50px !important;
 }
+
+
+
+#page{overflow-y:visible!important; }

@@ -44,102 +44,61 @@ new Tuple<string, string>(Url.TopicUrl("conditionsofuse"), "ConditionsOfUse")
 	var invserseFooter = GetThemeVariable<bool>("inverse-footer");
 }
 @{ Html.RenderWidget("footer_top"); }
-<section class="ftco-section ftco-partner">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/solidtrustpay.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/payeer.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/perfectmoney.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/bitcoin.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/litecoin.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-			<div class="col-sm ftco-animate">
-				<a href="#" class="partner"><img src="~/Content/theme/images/ethereum.png" class="img-fluid" alt="Colorlib Template"></a>
-			</div>
-		</div>
-	</div>
-</section>
-<footer class="ftco-footer ftco-bg-dark ftco-section">
-	<div class="container">
-		<div class="row mb-5 pb-5 align-items-center d-flex">
-			<div class="col-md-6">
-				<div class="heading-section heading-section-white ftco-animate">
-					<span class="subheading">Get an easy start</span>
-					<h2 style="font-size: 30px;">Sign Up Today!</h2>
-				</div>
-			</div>
-			<div class="col-md-3 ftco-animate">
-				<div class="price">
-					<span class="subheading">Starting at Only</span>
-					<h3>$1<span>/AdPack</span></h3>
-				</div>
-			</div>
-			<div class="col-md-3 ftco-animate">
-				<p class="mb-0"><a href="~/register" class="btn btn-primary py-3 px-4">Get started now</a></p>
-			</div>
-		</div>
-		<div class="row mb-5">
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4 bg-primary p-4">
-					<h2 class="ftco-heading-2">My Traffic Hub</h2>
-					<p>Grow Your Business With Unlimited Traffic And Build Up Your Cash Flow At The Same Time.</p>
-					<ul class="ftco-footer-social list-unstyled mb-0">
-						<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4 ml-md-5">
-					<h2 class="ftco-heading-2">Unseful Links</h2>
-					<ul class="list-unstyled">
-						<li><a href="@Url.Action("Index","Home")" class="py-2 d-block">Home</a></li>
-						<li><a href="~/partners" class="py-2 d-block">Plan</a></li>
-						<li><a href="~/faqs" class="py-2 d-block">FAQ</a></li>
-						<li><a href="~/terms" class="py-2 d-block">Terms</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4">
-					<h2 class="ftco-heading-2">&nbsp;</h2>
-					<ul class="list-unstyled">
-						<li><a href="~/login" class="py-2 d-block">Login</a></li>
-						<li><a href="~/register" class="py-2 d-block">Register</a></li>
-						<li><a href="~/contactus" class="py-2 d-block">Contact</a></li>
-						<li><a href="~/privacyinfo" class="py-2 d-block">Privacy</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md">
-				<div class="ftco-footer-widget mb-4">
-					<h2 class="ftco-heading-2">Support</h2>
-					<div class="block-23 mb-3">
-						<ul>
-							<li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mytraffichub.com</span></a></li>
-						</ul>
+
+<!--Footer area start here-->
+<footer class="top-foo">
+	<div id="footer-js">
+		<div class="footer-top section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="con">
+							<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Subscribe to us!</h2>
+							<ul>
+								<li class="wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;"><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li class="wow  fadeIn animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5; animation-name: fadeIn;"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;"><a href="#"><i class="fa fa-send-o"></i></a></li>
+								<li class="wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
+								<li class="wow  fadeIn animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeIn;"><a href="#"><i class="fa fa-envelope"></i></a></li>
+							</ul>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="search_btm wow  fadeIn animated" data-wow-duration="2.6s" style="visibility: visible; animation-duration: 2.6s; animation-name: fadeIn;">
+										<div class="search_main">
+											<input type="text" placeholder="enter your email address">
+											<button type="submit">subscribe</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;
-					<script>document.write(new Date().getFullYear());</script> All rights reserved | by <a href="mail:contactpolybeans@gmail.com" target="_blank">Polybeans </a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
+	</div>
+</footer>
+<footer class="foo-bot">
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="copyright wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+						<p>
+							© 2017-2018 <a href="#"><span>Bit Money</span></a> | All rights reserved. Design by
+							<a href="http://webstrot.com/" target="_blank"> <span>webstrot</span></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="foo-link wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
+						<ul>
+							<li><a href="#">WhitePaper</a></li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

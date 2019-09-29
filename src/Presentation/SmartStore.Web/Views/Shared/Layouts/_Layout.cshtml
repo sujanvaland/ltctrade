@@ -30,11 +30,22 @@
 }
 
 <div id="page">
-	<div class="canvas-blocker canvas-slidable"></div>
 	<div class="page-main canvas-slidable">
-		@{
-			Html.RenderAction("Menu", "Common", new { area = "" });
-		}
+		<header class="gc_main_menu_wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
+						<div class="logo-area">
+							<a href="index.html"><img src="~/Content/images/logo/logo.png" alt="logo" /></a>
+						</div>
+					</div>
+					@{
+						Html.RenderAction("Menu", "Common", new { area = "" });
+					}
+				</div>
+			</div>
+		</header>
+
 		<div id="content-wrapper">
 			<section id="content">
 				@{
@@ -87,10 +98,10 @@
 		}
 		@{ Html.RenderZone("page-end"); }
 	</div>
-	<a href="#" id="scroll-top" class="d-flex align-items-center justify-content-center">
-		<i class="fa fa-2x fa-angle-up"></i>
-	</a>
-</div>
-@{ Html.RenderPartial("_Notifications"); }
-@{ Html.RenderWidget("body_end_html_tag_before"); }
+				<a href="#" id="scroll-top" class="d-flex align-items-center justify-content-center">
+					<i class="fa fa-2x fa-angle-up"></i>
+				</a>
+			</div>
+			@{ Html.RenderPartial("_Notifications"); }
+			@{ Html.RenderWidget("body_end_html_tag_before"); }
 

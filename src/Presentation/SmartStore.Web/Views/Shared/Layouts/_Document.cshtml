@@ -103,36 +103,40 @@
 	<script src="~/Scripts/smartstore.globalization.adapter.js"></script>
 	@{ Html.RenderZone("head"); }
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="~/Content/theme/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="~/Content/theme/css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="~/Content/theme/css/animate.css">
-
-	<link rel="stylesheet" href="~/Content/theme/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="~/Content/theme/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="~/Content/theme/css/magnific-popup.css">
-	<link rel="stylesheet" href="~/Content/theme/css/aos.css">
-	<link rel="stylesheet" href="~/Content/theme/css/ionicons.min.css">
-	<link rel="stylesheet" href="~/Content/theme/css/bootstrap-datepicker.css">
-
-	<link rel="stylesheet" href="~/Content/theme/css/flaticon.css">
-	<link rel="stylesheet" href="~/Content/theme/css/icomoon.css">
-	<link rel="stylesheet" href="~/Content/theme/css/style.css?v=1">
-	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
-		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-		(function () {
-			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-			s1.async = true;
-			s1.src = 'https://embed.tawk.to/5d5c0d40eb1a6b0be608700a/default';
-			s1.charset = 'UTF-8';
-			s1.setAttribute('crossorigin', '*');
-			s0.parentNode.insertBefore(s1, s0);
-		})();
-	</script>
-	<!--End of Tawk.to Script-->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+	<!-- all css here -->
+	<!-- bootstrap v3.3.6 css -->
+	<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="~/Content/css/animate.css">
+	<!-- jquery-ui.min css -->
+	<link rel="stylesheet" href="~/Content/css/jquery-ui.min.css">
+	<!-- meanmenu css -->
+	<link rel="stylesheet" href="~/Content/css/meanmenu.min.css">
+	<!-- owl.carousel css -->
+	<link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+	<!-- bxslider css -->
+	<!--flaticon css -->
+	<link rel="stylesheet" href="~/Content/css/flaticon.css">
+	<!-- font-awesome css -->
+	<link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+	<link href="~/Content/css/video-js.css" rel="stylesheet">
+	<!-- style css -->
+	<link rel="stylesheet" href="~/Content/style.css">
+	<!-- responsive css -->
+	<link rel="stylesheet" href="~/Content/css/responsive.css">
+	<!-- modernizr css -->
+	<script src="~/Content/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="@Html.BodyCssClass()" @(Html.BodyId())>
+	<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+	<!-- preloader Start -->
+	<div id="preloader">
+		<div id="status">
+			<img src="~/Content/images/banner/loader.gif" id="preloader_image" alt="loader">
+		</div>
+	</div>
 	@{ Html.RenderZone("start"); }
 	@RenderBody()
 	@{ Html.RenderZone("aftercontent"); }
@@ -143,26 +147,38 @@
 	@Html.LocalizationScript(WorkContext.WorkingLanguage.UniqueSeoCode, vendorsRoot + "moment/locale", "*.js", null)
 
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
-
-	<script src="~/Content/theme/js/jquery.min.js"></script>
-	<script src="~/Content/theme/js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="~/Content/theme/js/popper.min.js"></script>
-	<script src="~/Content/theme/js/bootstrap.min.js"></script>
-	<script src="~/Content/theme/js/jquery.easing.1.3.js"></script>
-	<script src="~/Content/theme/js/jquery.waypoints.min.js"></script>
-	<script src="~/Content/theme/js/jquery.stellar.min.js"></script>
-	<script src="~/Content/theme/js/owl.carousel.min.js"></script>
-	<script src="~/Content/theme/js/jquery.magnific-popup.min.js"></script>
-	<script src="~/Content/theme/js/aos.js"></script>
-	<script src="~/Content/theme/js/jquery.animateNumber.min.js"></script>
-	<script src="~/Content/theme/js/bootstrap-datepicker.js"></script>
-	<script src="~/Content/theme/js/jquery.timepicker.min.js"></script>
-	<script src="~/Content/theme/js/scrollax.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="~/Content/theme/js/google-map.js"></script>
-	<script src="~/Content/theme/js/main.js"></script>
+	<!--Footer area end here-->
+	<!-- all js here -->
+	<!-- jquery latest version -->
+	<script src="~/Content/js/vendor/jquery-3.2.1.min.js"></script>
+	<!-- tether js -->
+	<script src="~/Content/js/tether.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="~/Content/js/bootstrap.min.js"></script>
+	<!-- owl.carousel js -->
+	<script src="~/Content/js/owl.carousel.min.js"></script>
+	<!-- meanmenu js -->
+	<script src="~/Content/js/jquery.meanmenu.js"></script>
+	<!-- jquery-ui js -->
+	<script src="~/Content/js/jquery-ui.min.js"></script>
+	<!-- easypiechart js -->
+	<script src="~/Content/js/jquery.easypiechart.min.js"></script>
+	<!-- particles js -->
+	<!-- wow js -->
+	<script src="~/Content/js/wow.min.js"></script>
+	<!-- smooth-scroll js -->
+	<script src="~/Content/js/smooth-scroll.min.js"></script>
+	<!-- plugins js -->
+	<script src="~/Content/js/plugins.js"></script>
+	<!-- EChartJS JavaScript -->
+	<script src="~/Content/js/echarts-en.min.js"></script>
+	<script src="~/Content/js/echarts-liquidfill.min.js"></script>
+	<script src="~/Content/js/vc_round_chart.min.js"></script>
+	<script src="~/Content/js/videojs-ie8.min.js"></script>
+	<script src="~/Content/js/video.js"></script>
+	<script src="~/Content/js/Youtube.min.js"></script>
+	<!-- main js -->
+	<script src="~/Content/js/main.js"></script>
 	<!-- **** All JS Files ***** -->
 	@{ Html.RenderZone("end"); }
 </body>

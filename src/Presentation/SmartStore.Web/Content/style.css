@@ -89,7 +89,7 @@ header{background:#0d469f;}
 .btn.btn-primary{border-radius:50px!important;}
 .password-recovery-page .form-control, .password-recovery-page .form-control:focus, .password-recovery-page .form-control:visited, 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,  
 input:-webkit-autofill:focus
 {background:#05347e!important;}
 .input-group-append .btn{border-radius:50px!important;}

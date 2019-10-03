@@ -78,7 +78,7 @@ header{background:#0d469f;}
     color: #fff;
     top: 5px;
 }
-
+ 
 /****************** login page css ********************************/
 .page.login-page, .page.password-recovery-page{padding-top:50px; overflow-y:visible!important; }
 .page.login-page p{color:#fff}

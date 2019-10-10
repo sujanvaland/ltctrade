@@ -82,8 +82,8 @@ header{background:#0d469f;}
 /****************** login page css ********************************/
 .page.login-page, .page.password-recovery-page{padding-top:50px; overflow-y:visible!important; }
 .page.login-page p{color:#fff}
-.login-box{background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);}
-.login-box .form-control{border-radius:0px!important; background: #1246ae!important; border:1px solid #1246ae!important; color:#fff!important;}
+.login-box{background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%); border-radius:30px;}
+.login-box .form-control{border-radius:50px!important; background: #1246ae!important; border:0px solid #1246ae!important; color:#fff!important;}
 .form-control{border-radius:0px!important; border: 0px!important;}
 .password-recovery-button{padding: 12px 35px!important; background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%); }
 .btn.btn-primary{border-radius:50px!important;}
@@ -108,6 +108,21 @@ input:-webkit-autofill:focus
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{border-top:1px solid #1a56b4!important;}
 .table{margin-bottom: 25px!important;}
 table tr:hover{background: #124eac!important;}
+.registration-page  input.form-control, .select2-container--bootstrap .select2-selection {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 50px!important;
+    border: 0;
+    background: #083985;
+    color: #ffffff;
+}
+fieldset.content-group > legend > span{background: none!important;}
+.select2-container--bootstrap .select2-selection--single .select2-selection__arrow{background: none!important; border-left:0px;}
+.registration-page .btn-primary{padding: 10px 50px;}
+.registration-page .select2-container--bootstrap .select2-selection--single .select2-selection__rendered{color:#fff!important;}
+.registration-page  .select2-selection.select2-selection--single{padding-top:13px;}
+.whitebg .pagewidth{padding-bottom:50px;}
 
 /*Responsive Media*/
 /* ....................................

@@ -123,7 +123,9 @@ fieldset.content-group > legend > span{background: none!important;}
 .registration-page .select2-container--bootstrap .select2-selection--single .select2-selection__rendered{color:#fff!important;}
 .registration-page  .select2-selection.select2-selection--single{padding-top:13px;}
 .whitebg .pagewidth{padding-bottom:50px;}
-
+.registration-page  .col-form-label{color:#fff!important;}
+.aboutustext h2{margin-bottom: 40px!important;}
+.video-area{padding: 10px!important;}
 /*Responsive Media*/
 /* ....................................
 1.1 Reset CSS 
@@ -4737,7 +4739,7 @@ canvas{
 	}
 }
 p{
-	color:rgba(255, 255, 255, 0.36);
+	color:rgba(255, 255, 255, 1);
 }
 .btc_faq_main_wrapper{
 	float:left;

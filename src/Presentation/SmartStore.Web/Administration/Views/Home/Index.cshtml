@@ -7,9 +7,6 @@
 		<i class="fa fa-bar-chart-o"></i>
 		@T("Admin.Dashboard.StoreStatistics")
 	</div>
-	<div class="options">
-		<a href="@Url.Action("SurfAds", "AdCampaign")" class="btn btn-primary" style="width:200px;">Surf Ads</a>
-	</div>
 </div>
 <div class="dashboard">
 	@{ Html.RenderWidget("admin_dashboard_top"); }
@@ -69,26 +66,6 @@
 		</div>
 
 	</div>
-	<div class="row">
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-		<div class="col-lg-2">
-			@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-		</div>
-	</div>
 	<div class="row mt-25">
 		<div class="col-md-5">
 			<table class="table table-bordered table-striped">
@@ -117,91 +94,7 @@
 					<td style="font-weight:bold;">Status</td>
 					<td style="font-weight:bold;@((Model.Status == "Active") ? "color:green;" : "color:red;")">@Model.Status</td>
 				</tr>
-				<tr>
-					<td style="font-weight:bold;">My Referral</td>
-					<td>@Model.TotalReferral</td>
-				</tr>
-				<tr>
-					<td style="font-weight:bold;">Vacation Mode Expiry</td>
-					<td>@Model.VacationModelExpiryDate</td>
-				</tr>
-				<tr>
-					<td style="font-weight:bold;">Ads required to Surf</td>
-					<td>
-						@Model.NoOfAdsToSurf
-				</td>
-			</tr>
 		</table>
-	</div>
-	<div class="col-lg-3">
-		<table class="tablecenter">
-			<tr>
-				<td>
-					<a href="@Url.Action("PurchaseVaccationMode","AdCampaign")" class="btn btn-primary" style="width:200px;">Buy Vaccation Mode</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="@Url.Action("Withdrawal","Investment")" class="btn btn-primary" style="width:200px;">Request Withdrawal</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="@Url.Action("WithdrawalReport","Report")" class="btn btn-primary" style="width:200px;">Withdrawal History</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="@Url.Action("MyReferral","Customer")" class="btn btn-primary" style="width:200px;">Referral</a>
-				</td>
-			</tr>
-		</table>
-		@*@{ Html.RenderAction("MarketplaceFeed"); }*@
-	</div>
-	<div class="col-md-4">
-		<table class="table table-bordered table-striped">
-			<thead>
-				<tr>
-					<th colspan="2">My Earnings:</th>
-				</tr>
-			</thead>
-			<tr>
-				<td style="font-weight:bold;">Pass Up Bonus</td>
-				<td>$@Model.DirectBonus</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold;">Profit Share</td>
-				<td>$@Model.PoolShare</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold;">Matrix Earning</td>
-				<td>$@Model.CyclerIncome</td>
-			</tr>
-			<tr>
-				<td style="font-weight:bold;">Total Earning</td>
-				<td>$@Model.TotalIncome</td>
-			</tr>
-		</table>
-	</div>
-</div>
-<div class="row">
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-	</div>
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-	</div>
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-	</div>
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-	</div>
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
-	</div>
-	<div class="col-lg-2">
-		@{ Html.RenderAction("Banner125", "Common", new { area = "" }); }
 	</div>
 </div>
 

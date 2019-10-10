@@ -67,16 +67,16 @@ namespace SmartStore.Admin.Controllers
 		#endregion
 
 		#region Methods
-		public ActionResult LoginAd()
-		{
-			var banner = _adCampaignService.GetRandomAds("Login", "Click", "", 1);
-			var b = banner.FirstOrDefault();
-			if (b == null || _workContext.CurrentCustomer.IsAdmin())
-			{
-				return RedirectToAction("Index");
-			}
-			return View(b);
-		}
+		//public ActionResult LoginAd()
+		//{
+		//	var banner = _adCampaignService.GetRandomAds("Login", "Click", "", 1);
+		//	var b = banner.FirstOrDefault();
+		//	if (b == null || _workContext.CurrentCustomer.IsAdmin())
+		//	{
+		//		return RedirectToAction("Index");
+		//	}
+		//	return View(b);
+		//}
 
 		public ActionResult Index()
         {

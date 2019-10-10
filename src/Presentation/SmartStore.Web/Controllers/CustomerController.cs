@@ -493,10 +493,10 @@ namespace SmartStore.Web.Controllers
 					// Redirect home where redirect to referrer would be confusing.
 					if (returnUrl.IsEmpty() || returnUrl.Contains(@"/login?") || returnUrl.Contains(@"/passwordrecoveryconfirm"))
 					{
-						return RedirectToAction("LoginAd","Home",new { area = "admin" });
+						return RedirectToAction("Index","Home",new { area = "admin" });
 					}
 
-					return RedirectToAction("LoginAd", "Home", new { area = "admin" });
+					return RedirectToAction("Index", "Home", new { area = "admin" });
 					//return RedirectToReferrer(returnUrl);
 				}
                 else

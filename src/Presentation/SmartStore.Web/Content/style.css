@@ -9,7 +9,22 @@ body {
   vertical-align: baseline;
   line-height: 26px;
   font-weight: 400;
-  background:#0d469f;
+  background:#0d469f url(images/body_back.jpg) repeat left top;;
+}
+.btc_slider_about_img{text-align:right;}
+
+.btc_slider_about_img img {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
 }
 .page-main{background: none!important;}
 header{background:#0d469f;}
@@ -2092,7 +2107,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 	padding-top: 80px;
 }
 #clockdiv, #clockdiv2{
-	color: #fff;
+	color: #333;
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
@@ -2111,7 +2126,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 #clockdiv div > span, #clockdiv2 div > span{
     font-family: 'Oswald', sans-serif;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 10px; background: #fff;
     border: 2px dashed #a1a1a1;
     display: inline-block;
     width: 120px;
@@ -2132,7 +2147,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 }
 .smalltext{
 	padding-top: 15px;
-	font-size: 16px;
+	font-size: 16px; color:#fff;
 }
 .particles-js-canvas-el {
   height: auto;
@@ -2708,7 +2723,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 99;
 }
 .video-des .deslidt ul li .left-con .box-con .dbox {
-  background: #1f58b1;
+  background: #1753af;
   border-radius: 22px;
   width: 400px;
   height: 195px;
@@ -2846,7 +2861,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 99;
 }
 .video-des .deslidt ul li .right-con .box-con .dbox {
-  background: #1f58b1;
+  background: #1753af;
   border-radius: 22px;
   width: 400px;
   height: 195px;
@@ -3218,7 +3233,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .currency-area .rete-list .content {
-  background: #1f58b1;
+  background: #fff;
   padding: 0 50px;
   display: block;
   border-radius: 10px;
@@ -3253,7 +3268,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .currency-area .rete-list h2 {
   font-size: 22px;
   font-weight: 900;
-  color: #ffffff;
+  color: #333333;
   text-transform: capitalize;
 }
 @media only screen and (max-width: 1600px) {
@@ -3333,7 +3348,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .projects .project-list .content {
   display: block;
-  background: #1f58b1;
+  background: #ffffff;
   text-align: center;
   padding: 60px 0 70px;
   border-radius: 15px;
@@ -3350,7 +3365,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   margin: 0 0 20px;
 }
 .projects .project-list .content h3 {
-  color: #ffffff;
+  color: #333333;
   margin: 0;
   line-height: 28px;
 }
@@ -3853,7 +3868,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .steps-area {
   position: relative;
   display: block;
-  background: #1f58b1;
+  background:transparent;
 }
 .steps-area .steps-heading {
   display: block;
@@ -4287,7 +4302,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .steps-details, .video-des{
-	background:#0d469f;
+	background:transparent;
 }
 .steps-details .steps-cont ul li:nth-child(6):before {
   border-top: 2px solid rgba(255, 255, 255, 0.36);
@@ -4308,7 +4323,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .steps-details .steps-cont ul li:nth-child(6) span {
   line-height: 66px;
   border: 2px solid rgba(255, 255, 255, 0.36);
-  background: #1f58b1;
+  background: transparent;
   color: #ffffff;
 }
 @media only screen and (max-width: 480px) {
@@ -4325,6 +4340,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   margin: 0 0 -9px;
   background:#0d469f;
 }
+.sud svg{display:none!important;}
 @media only screen and (max-width: 992px) {
   .sud {
     display: none;
@@ -4344,7 +4360,7 @@ body.date-20180212.exp-invert-logo {
 .video-area {
   position: relative;
   display: block;
-  background: #1f58b1;
+  background: transparent;
   padding-bottom: 120px;
   text-align: center;
   margin: 0;
@@ -4426,7 +4442,7 @@ body.date-20180212.exp-invert-logo {
 5. Team area start here
 ....................................*/
 .team-area {
-  background: #1f58b1;
+  background: transparent;
   position: relative;
 }
 .team-area .team-list {
@@ -4460,7 +4476,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   z-index: 9999;
   padding: 0 45px;
   padding-top: 45px;
-  background: #0d469f;
+  background: #1f58b1; padding-bottom:30px;
   z-index: 999;
   border-radius: 15px;
 }
@@ -4709,12 +4725,27 @@ background: -ms-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
 }
 .team2-area{
-	background:#0d469f;
+	background:transparent;
 }
 .team2-area .team-list .con p {
   padding: 0 20px;
 }
-
+.single-price-plan.mb-100{background: #01368a!important; text-align: center;
+  padding: 30px;
+  border-radius: 20px;}
+  .price-plan-value{border-bottom:1px solid #1753af!important;}
+  .price-plan-title h4{ color:#fff; font-size: 25px;}
+  .price-plan-value h2{font-size: 45px; display: inline-block;}
+  .price-plan-value p{display: inline-block;}
+  .single-price-plan .btn.hami-btn{background: #0e4aaa;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    margin-top: 20px; transition: all 0.3s ease;}
+    .single-price-plan .btn.hami-btn:hover{background:#fff; color:#0e4aaa;transition: all 0.3s ease; }
+    .btn.view-all-btn{color:#fff!important; background: #0e4aaa;}
 /*....................................
 8. Price list area start here
 ....................................*/
@@ -4981,5 +5012,6 @@ p{
 	}
 }
 .faq_area{
-	background:#0d469f !important;
+	background:transparent !important;
 }
+.registration-page{margin-top:30px;}
